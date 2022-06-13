@@ -1,0 +1,285 @@
+$navfooter-bg: #323E48; 
+$tangerine: #F58800;
+$cyprus: #00463e;
+$pattensBlue: #d8dfe1;
+$font-weights:(
+  "medium" : 600,  
+);
+$font-sizes:(
+  "f-13": 10px,
+  "f-14": 12px,  
+  "f-60": 50px,
+  "f-48": 48px,
+  "f-41": 41px,
+);
+
+*{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  overflow-x: hidden;
+}
+html{
+  scroll-behavior: smooth;
+}
+.bg-arsenic  { background-color: $navfooter-bg; }
+.bg-cypres   { background-color: $cyprus; }
+.bg-blue     { background-color: $pattensBlue;}
+.bg-tangerine{ background-color: $tangerine;}
+
+.nav-links{
+  color: #FFFFFF;
+  font-size: map-get($font-sizes, f-14 );
+  font-weight: map-get($font-weights, medium );
+  line-height: 19px;
+}
+.nav-dropdown-links{ 
+  color: $navfooter-bg;
+  font-size: map-get($font-sizes, f-13 );
+  padding: 13px 30px;
+}
+
+.banner-section{
+  background-image: url(../dist/image/banner-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.banner-section h1{
+  font-size: map-get($font-sizes, f-60 );
+  line-height: 76px;
+  color: #FFFFFF;
+  z-index: 9999;
+}
+.banner-section .tablet-mode{
+  font-size: map-get($font-sizes, f-48 );
+  line-height: 64px;
+}
+.banner-btn{
+  background-color: $tangerine;
+  border-radius: 50px;
+  font-size: map-get($font-sizes, f-14 );
+  font-weight: map-get($font-weights, medium);
+  letter-spacing: 1px;
+  line-height: 19px;
+  transition: 1s all ease;
+}
+.banner-btn .fa{
+  font-size: 12px;
+}
+
+.uber__left h3{
+  color: $cyprus;
+  font-size: 32px;
+  line-height: 48px;  
+}
+.uber__left p{
+  color: #323e48;
+  font-size: 15px;
+  line-height: 25px;  
+  font-weight: 500;
+}
+.uber__right{ 
+  background-color: #F58800;
+  color: #FFFFFF;
+}
+.uber__right .uber__right-p{
+  font-size: 21px;
+  line-height: 31px;
+}
+.uber__right p{
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.heute__section{ 
+  background-color: $cyprus;
+  color: #FFFFFF;
+}
+.heute__section .fa{ 
+  font-size: 10px;
+}
+.heute__section-paragraph{
+  font-size: 40px;
+  line-height: 60px;
+}
+.heute__section-img1{
+  background-image: url(../dist/image/01.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 500px;
+}
+.heute__section-img1__body{
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  left: 0;
+  background-color: $cyprus ;
+  opacity: .8;
+}
+.heute__section-img1__body p{ font-size: 13px; }
+.heute__section-img1__body h4{font-size: 17px; }
+.heute__section-img1__body a{
+  font-size: 13px; 
+  color: $tangerine; 
+}
+
+
+.heute__section-img2{
+  background-image: url(../dist/image/02.png);
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.heute__section-img2 p{ font-size: 12px; }
+.heute__section-img2 h4{font-size: 14px; }
+
+
+.heute__section-img3{
+  background-image: url(../dist/image/03.png);
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.heute__section-img3 p{ font-size: 12px; }
+.heute__section-img3 h4{font-size: 14px; }
+.team-body{
+  position: absolute;
+  background-color: $cyprus;
+  opacity: 0.7;
+  color: white;
+  width: 100%;
+  bottom: 0;
+  right: 0;  
+  top: -140px; 
+}
+
+.line {
+  width: 5%;
+  background-color: $cyprus;
+  height: 3px;
+}
+.line2 { background-color: white;}
+.member__section p{
+  color: #323E48;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 19px;
+}
+.member__section h1{
+  color: #00463e;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 60px;
+}
+
+.rufen__section{ color: #FFFFFF;}
+.rufen__section p{
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 19px;
+}
+.rufen__section h2{
+  font-size: 36px;
+  line-height: 48px;
+}
+.rufen__section-btn a{
+    color: $tangerine;
+    transition: 1s all ease;
+}
+.rufen__section-btn:hover{
+  color:red;
+}
+.rufen__section-btn .fa{
+  font-size: 9px;
+}
+
+footer{ color:#FFFFFF; } 
+footer .hr{ border-bottom: 1px solid #FFFFFF;}
+footer p{
+  font-size: 14px;
+  line-height: 21px;
+}
+footer h5{
+  font-size: 21px;
+  line-height: 31px;
+}
+
+.footer{ color: #FFFFFF;}
+.footer p{
+  font-size: 14px;
+  line-height: 21px;
+}
+.footer div{
+  font-size: 14px;
+}
+@media screen and (max-width: 992px) {
+  .nav-links{
+    font-size: map-get($font-sizes, f-13 );
+  }
+  .uber__left h3{
+    font-size: 24px;
+    line-height: 34px;  
+  }
+  .uber__left p{
+    color: #323e48;
+    font-size: 13px;
+    line-height: 23px;  
+  }
+  .uber__right .uber__right-p{
+    font-size: 18px;
+    line-height: 19px;
+  }
+  .uber__right p{
+    font-size: 13px;
+    line-height: 25px;
+  }
+  .heute__section-paragraph{ font-size: 30px;  }
+  .heute__section-img1__body p{ font-size: 10px; }
+  .heute__section-img1__body h4{font-size: 12px; }
+  .heute__section-img2 p, .heute__section-img3 p{ font-size: 10px; }
+  .heute__section-img2 h4,.heute__section-img3 h4{font-size: 12px; }
+  .member__section p{
+    font-size: 12px;
+    letter-spacing: 0.86px;
+    line-height: 17px;
+  }
+  .member__section h1{
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .rufen__section p{
+    font-size: 12px;
+    letter-spacing: 0.86px;
+    line-height: 17px;
+  }
+  .rufen__section h2{
+    font-size: 24px;
+    line-height: 34px;
+  }
+  footer h5{
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .footer p{
+    font-size: 12px;
+    line-height: 21px;
+  }
+  .footer div{
+    font-size: 12px;
+  }
+  footer .hr{ border-bottom: 1px solid transparent;}
+}
+@media screen and (max-width: 768px) {
+  .banner-section .tablet-mode{
+    line-height: 49px;
+    font-size: map-get($font-sizes, f-41 );
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+  }
+  .heute__section-img1{
+    height: 300px;
+  }
+}

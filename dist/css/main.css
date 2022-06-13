@@ -1,0 +1,13 @@
+
+.banner-section{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../image/banner-bg.png);   
+}
+.heute__section-img1{
+  background-image: url(../image/01.png);
+}
+.heute__section-img2{
+  background-image: url(../image/02.png);
+}
+.heute__section-img3{
+  background-image: url(../image/03.png);
+}

@@ -1,0 +1,138 @@
+@import 'config';
+
+.nav-fonts{
+  font-size: map-get($fontSize, f-12 );
+  line-height: 1.188rem;
+  position: relative;
+  text-decoration: none;
+}
+.nav-fonts::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: .01rem;
+  border-radius: 0.25rem;
+  background-color: white;
+  opacity: .7;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .5s ease-in-out;
+}
+.nav-fonts:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.banner__section h1{
+  font-size: map-get($fontSize, f-64);
+  line-height: map-get($lineHeight, lh-76);
+}
+.banner__section a,.member__section a,.rufen__section a{
+  font-size: map-get($fontSize, f-14);
+  line-height: map-get($lineHeight, lh-19);
+  letter-spacing: 1px;
+  border-radius: 55px;
+  transition: .9s all ease;
+}
+.banner__section .fa{ font-size: map-get($fontSize, f-12); }
+
+.uber__left h3, .heute__section h3{
+  color: map-get($color , cyprus );
+  font-size: map-get($fontSize, f-32 );
+  line-height: map-get($lineHeight, lh-48);  
+}
+.uber__left p, .uber__right span {
+  color: map-get($color, arsenic);
+  font-size: map-get($fontSize, f-14);
+  line-height: map-get($lineHeight, lh-25); 
+}
+.uber__right p{
+  font-size: map-get($fontSize, f-21);
+  line-height: map-get($lineHeight, lh-25);
+}
+.uber__right span{ color: white; }
+
+.heute__section-img1{ height: 30rem; }
+.heute__section-img2{ height: 15rem; }
+.heute__section-img3{ height: 15rem; }
+.heute__section-img1__body{
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  left: 0;
+  background-color: map-get($color, cyprus ) ;
+  opacity: .8;
+}
+.heute__section a{
+  font-size: map-get($fontSize, f-12 );
+  color:  map-get($color, tangerine ) ;
+  transition: .5s all ease;
+}
+.heute__section a:hover{
+  color: white; 
+  padding-left: 10px;
+}
+.line {
+  width: 5%;
+  background-color: map-get($color, cyprus );
+  height: 3px;
+}
+.line2 { background-color: white;}
+.member__section p{
+  color: map-get($color, cyprus );
+  font-size: map-get($fontSize, f-12 );
+  letter-spacing: 1px;
+  line-height: map-get($lineHeight, lh-19 );
+}
+.member__section h2{
+  color: map-get($color, cyprus );
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 60px;
+}
+
+.rufen__section p{
+  font-size: map-get($fontSize, f-14);
+  letter-spacing: 1px;
+  line-height: map-get($lineHeight, f-19);
+}
+.rufen__section h2{
+  font-size: map-get($fontSize, f-36);
+  line-height: map-get($lineHeight, f-48);
+}
+.rufen__section a{ color: map-get($color , tangerine ); }
+
+footer p{
+  font-size: map-get($fontSize, f-12);
+  line-height: map-get($lineHeight, f-19);
+}
+footer h5{
+  font-size: map-get($lineHeight, lh-19);
+  line-height: map-get($lineHeight, lh-25);
+}
+footer p .nav-fonts, .f-links{
+  font-size: map-get($fontSize, f-12);
+  line-height: map-get($lineHeight, f-19);
+}
+
+
+@media screen and (max-width: 1199px) {
+  .banner__section h1{ font-size: 3.5rem; }
+}
+@media screen and (max-width: 767px) {
+  .heute__section-img1{ height: 25rem; }
+  .heute__section-img2{ height: 15rem; }
+}
+@media screen and (max-width: 576px) {
+  .banner__section h1{ font-size: 3rem; }
+  .heute__section-img1{ height: 15rem; }
+  .heute__section a{ font-size: map-get($fontSize, f-12);}
+  .heute__section h5{ font-size: map-get($fontSize, f-14);}
+  .heute__section p{ font-size: map-get($fontSize, f-12);}
+  .member__section h2{
+    font-size: 38px;
+    line-height: 45px;
+  }
+}

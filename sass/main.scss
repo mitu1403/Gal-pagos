@@ -124,8 +124,11 @@ footer p .nav-fonts, .f-links{
 @media screen and (max-width: 767px) {
   .heute__section-img1{ height: 25rem; }
   .heute__section-img2{ height: 15rem; }
+  .rufen__section a{
+    font-size: map-get($fontSize, f-12);}
 }
 @media screen and (max-width: 576px) {
+  nav .nav-fonts:before{background-color: map-get($color, arsenic );}
   .banner__section h1{ font-size: 3rem; }
   .heute__section-img1{ height: 15rem; }
   .heute__section a{ font-size: map-get($fontSize, f-12);}
